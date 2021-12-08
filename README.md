@@ -1,5 +1,6 @@
 # Number-guess-project
 # my code for a 'guess the number' game
+
 import random
 record = []
 def score_check():
