@@ -1,12 +1,16 @@
 # Number-guess-project
 # my code for a 'guess the number' game
+  
   import random
+  
   record = []
+  
   def score_check():
     if len(record) == 0:
       print ("there is no record, go get it tiger")
     else:  
       print (f"Ok, the record is {min(record)}, you got this!")  
+  
   def new_game():
     name = input("Hello what's your name?")
     start = input(f"do you want to play a game {name}? Enter yes or no")
@@ -14,6 +18,7 @@
     rand = int(random.randint(1,10))
     score_check()
     while start.lower() == "yes":
+      
       guess = int(input("Pick a number between 1 and 10")) 
       if guess < 1 or guess > 10:
           print ("Please pick a number between 1 and 10")
